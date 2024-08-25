@@ -4,11 +4,12 @@ import {
 	createRoutesFromElements,
 	Route,
 	RouterProvider,
-  useLocation,
-  useNavigate,
+  // useLocation,
+  // useNavigate,
 } from "react-router-dom";
 import LandingLayout from "./layouts/LandingLayout";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 
 const router = createBrowserRouter(
@@ -16,7 +17,7 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<LandingLayout />}>
         <Route index element={<Home />} />
-        <Route path="" element />
+        <Route path="/about" element = {<About/>} />
       </Route> 
     </>
   )
