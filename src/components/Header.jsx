@@ -1,18 +1,51 @@
 import React, { useState } from "react";
+import Logo from "../assests/images/logo.png";
+import Logo2 from "../assests/images/logo-lg.png";
+import SearchIcon from "../assests/images/search.png"
+import { navbar } from "../utils/navbar";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
+
 
 const Header = () => {
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
 	const toggleDrawer = () => {
 		setIsDrawerOpen(!isDrawerOpen);
 	};
+
+  const Icons = () => {
+    return <>{isSubMenuOpen ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}</>;
+  };
 	return (
 		<>
+			<header className="hidden md:flex flex-col bg-white py-[22px] px-[100px]">
+				<div className="w-full flex items-center gap-[50px] rounded-[10px] mb-[20px]">
+          <div className="w-[100px]">
+            <img src={Logo2} alt="" width="100%" />
+          </div>
+          <div className="relative">
+            <input type="text" placeholder="Search for Programmes and Events" className="w-[535px] bg-[#ADDF8840] px-[20px] py-[8px] focus:outline-none" />
+            <img src={SearchIcon} alt="" className="absolute top-3 right-5 w-[17.05px]" />
+          </div>
+        </div>
+        <div className="">
+          <ul className="flex flex-row gap-[42px] items-center">
+            {navbar.map((nav, i) => (
+              <div key={i} className="flex justify-center items-center cursor-pointer gap-[42px]">
+                <li >{nav.text}</li>
+                {nav.subMenu && (<Icons />)}
+                <span className="w-[2px] h-[20px] bg-[#316541] " />
+              </div>
+            ))}
+          </ul>
+        </div>
+			</header>
 			<header className="bg-white shadow-lg md:hidden">
-				<div className="flex items-center justify-between p-4">
+				<div className="flex items-center justify-between p-5">
 					{/* Logo */}
 					<div className="flex items-center">
-						<img src="path-to-logo.png" alt="Logo" className="h-8" />
+						<img src={Logo} alt="Logo" className="h-8" />
 					</div>
 
 					{/* Search Bar */}
@@ -20,7 +53,7 @@ const Header = () => {
 						<input
 							type="text"
 							placeholder="Search for Programmes and Events"
-							className="w-full p-2 text-sm bg-green-100 rounded-full focus:outline-none"
+							className="w-full h-[32px] px-[16px] text-sm bg-[#ADDF8840] text-[#181818] rounded-[10px] focus:outline-none"
 						/>
 					</div>
 
@@ -28,7 +61,7 @@ const Header = () => {
 					<div>
 						<button
 							onClick={toggleDrawer}
-							className="text-green-700 focus:outline-none"
+							className="text-[#316541] focus:outline-none"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
