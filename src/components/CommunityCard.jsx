@@ -4,8 +4,8 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const CategoryCard = () => {
   return (
-    <div className='lg:w-[300px]  lg:h-[465px] rounded-[10px] border   '>
-             <div className="p-4  justify-center bg-[#ADDF881A] ">
+    <div className='lg:w-[300px]  lg:h-[465px] rounded-[10px] border border-[#316541]  '>
+             <div className="p-3  justify-center bg-[#ADDF881A] ">
 
             <img src={vc4} alt="" className='lg:w-[200px] m-auto' /> 
 
