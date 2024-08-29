@@ -57,20 +57,20 @@ const Home = () => {
         </div>
          
          <div className='w-full  lg:h-[145px] bg-[#ADDF88] rounded-md '>
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-7 py-4 lg:py-0  px-10 '>
-            <div className='md:w-[273px]  border-[#FFFFFF] lg:mt-8  border-r '>
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-7 py-4 lg:py-0  px-20 '>
+            <div className='  border-[#FFFFFF] lg:mt-8  border-r '>
               <p className='text-[24px] font-[600] mb-[12px]'>10,000+</p>
               <p className='lg:text-[14px] text-[10px] font-[500] leading-[16px]'>Enterprise Support Organizations</p>
             </div>
-            <div className='md:w-[273px] border-[#FFFFFF] lg:mt-8 md:border-r'>
+            <div className=' border-[#FFFFFF] lg:mt-8 md:border-r'>
               <p className='text-[24px] font-[600] mb-[12px]'>2,000+</p>
               <p className='lg:text-[14px] text-[10px] font-[500] leading-[16px]'>Business Organizations</p>
             </div>
-            <div className='md:w-[273px] border-[#FFFFFF] lg:mt-8 border-r'>
+            <div className=' border-[#FFFFFF] lg:mt-8 border-r'>
               <p className='text-[24px] font-[600] mb-[12px]'>1,000,000+</p>
               <p className='lg:text-[14px] text-[10px] font-[500] leading-[16px]'>Events and Programmes</p>
             </div>
-            <div className='w-[273px] lg:mt-8'>
+            <div className=' lg:mt-8'>
               <p className='text-[24px] font-[600] mb-[12px] '>100+</p>
               <p className='lg:text-[14px] text-[10px] font-[500] leading-[16px]'>Countries</p>
             </div>
@@ -115,7 +115,7 @@ const Home = () => {
            
           
         </div>
-        <div className='lg:w-[1240px] lg:px-[100px] py-10 lg:py-0 '>
+        <div className='w-full lg:px-[100px] py-10 lg:py-0 '>
            <div className='flex justify-center  '>
                 <Link to='#' className='py-[12px] px-[32px]  border border-[#316541] rounded-[5px] text-[20px]  font-[600]'>
                 FIND MORE PROGRAMMES
@@ -141,7 +141,7 @@ const Home = () => {
            </div>
 
 
-           <div className=' mx-auto bg-[#ADDF881A] lg:h-[317px] mt-[60px]  rounded-[10px] lg:w-[90%] mb-[100px] '>
+           <div className=' mx-auto bg-[#ADDF881A] lg:h-[317px] mt-[60px]  rounded-[10px] lg:w-[80%] mb-[100px] '>
             <div className='p-7'>
               <h1 className='text-[32px] font-[600] text-[#316541] mb-3'>Let's Personalize it</h1>
               <p className='text-[12px] font-[500] mb-5'>Tell us what you're into and we'll suggest more</p>
@@ -166,8 +166,8 @@ const Home = () => {
                 </div>
 
 
-               <div className=' m-auto lg:px-7'>
-               <div className='grid grid-cols-2 lg:grid-cols-5  px-4 gap-4 '>
+               <div className=' m-auto lg:px-24'>
+               <div className='grid grid-cols-2 lg:grid-cols-5  px-4 gap-5 '>
                   {Esos && Esos.map((e,index) =>(
                     <EsoCard key={index} eso={e} />
                   ))}
@@ -188,8 +188,8 @@ const Home = () => {
                 </div>
               </div>
              
-            <div className=' mx-auto py-[90px]   lg:px-8'>
-              <div className='grid grid-cols-1 md:grid-cols-2   lg:grid-cols-3 lg:gap-5 md:gap-15 gap-36'>
+            <div className=' mx-auto py-[90px]  lg:px-20'>
+              <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 lg:gap-6 md:gap-15 gap-36'>
                 {articles && articles.map((a,i) =>(
                   <ArticleCard key={i}/>
                 ))}
@@ -202,29 +202,32 @@ const Home = () => {
                 FIND MORE ARTICLES
             </Link>
            </div>
+                </div>
                 
-                <div className='  m-auto  bg-[#ADDF881A] lg:h-[651] lg:w-[1200px] mt-20 py-4 lg:px-11   lg:p-8   p-4 rounded-[20px] w-full md:p-2 '>
-                  <div className='p-3'>
-                    <h1 className='text-[32px] text-[#316541] font-[600]'>Our Creative Archive</h1>
-                    <p className='text-[12px] ml-2 md:ml-0'>A collection of Creative Excellence</p>
-                  </div>
-                    
-                    <div className=' grid md:grid-cols-2 lg:grid-cols-4 gap-4 px-7'>
+                <div className='m-auto  bg-[#ADDF881A] mt-20 py-5 rounded-[20px] w-[90%] lg:w-[80%] px-10 lg:px-20   '>
+                  
+                    <h1 className='lg:text-[32px] text-[24px] text-[#316541] font-[600] '>Our Creative Archive</h1>
+                    <p className='text-[13px] ml-2 mb-[30px] font-[400] '>A collection of Creative Excellence</p>
+
+
+
+                    <div className=' grid md:grid-cols-2 lg:grid-cols-4 gap-4 '>
                       {photos.map((photo,index)=>(
                         <GalleryCard key={index} photo={photo}/>
                       ))}
 
                     </div>
-                </div>
+                  </div>
+                    
 
-                <div  className='w-[100%] m-auto lg:mt-[130px] mt-[50px] lg:px-16'>
+                <div  className='w-full m-auto lg:mt-[130px] mt-[50px] lg:px-20'>
                     <p className='px-[32px]'>Expert Solutions for Your Success</p>
                     <h1 className='px-[32px] lg:text-[32px] text-[24px] text-[#316541] font-[600]'>Our Partners</h1>
                     <div className='lg:px-5 px-8 mt-[30px] lg:mt-0'> 
                       <img src={sponsors} alt="" style={{width:'100%'}} />
                     </div>
                 </div>
-      </div>
+      
 
       
     </>

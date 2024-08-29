@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 
 const ArticleCard = () => {
   return (
-    <div className='md:w-[370px] h-[383px] rounded-[10px] bg-[#ADDF8840] shadow-md relative'>
+    <div className=' h-[383px] rounded-[10px] bg-[#ADDF8840] shadow-md relative lg:px-8'>
         
 
         <img src={image} alt="" className="absolute top-[-100px] left-[30px] w-[80%]" />
 
         <div className="absolute top-[137px] px-11">
-            <h2 className="text-[#316541] text-[16px] mb-4 font-[500]" >How to make money from Agronomy</h2>
+            <h2 className="text-[#316541] text-[16px] mb-4 font-[500] text-center" >How to make money from Agronomy</h2>
             <p className="text-[12px] text-[#316541] text-center">Capitalise on the precision farming revolution by offering services like soil testing, crop monitoring, and precision irrigation management. Learn how to invest in the right technology and market your services to farmers</p>
                 <div className="mt-[30px] text-center">
 
