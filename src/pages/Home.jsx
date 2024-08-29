@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
       <div className="header">
-        <div className="container mx-auto flex flex-col lg:flex-row  justify-between py-8 md:py-5 ">
+        <div className=" mx-auto flex flex-col lg:flex-row  justify-between py-8 md:py-5 ">
           <div className="text-header w-[356px] md:pt-[120px] md:w-[100%] m-auto text-center lg:w-[45%] md:pl-10 lg:pl-12 text-textWhite  md:text-start">
             <img src={arrow} alt=" " className="mb-4"  />
             <h1 className="uppercase lg:text-[36px] text-[28px] font-bold text-white  lg:w-[100%] mb-3 md:leading-8">
@@ -79,7 +79,7 @@ const Home = () => {
       </div>
 
 
-      <div className='container m-auto'>
+      <div className='m-auto px-5'>
         <div className=' w-full  lg:w-[1240px] lg:p-[100px] pt-7 md:px-4   '>
           <p className='text-[13px] px-5 lg:px-0'>Expert Solutions for Your Success</p>
           <h2 className='text-[32px] font-[600] text-[#316541] mb-[50px] px-5 lg:px-0'>What We Provide</h2>
@@ -101,7 +101,7 @@ const Home = () => {
           </div>
           </div>
 
-          <div className='mt-[100px] px-5 lg:px-4 '>
+          <div className='mt-[100px]  '>
               <p className='text-[#181818] text-[13px] font-[500] '>Expert Solutions for Your Success</p>
               <div className='flex justify-between'>
                 <h1 className='text-[#316541] text-[32px] font-[600] '>Upcoming Programmes</h1>
@@ -121,10 +121,10 @@ const Home = () => {
                 FIND MORE PROGRAMMES
                 </Link>
            </div>
-          <div className='mt-[100px]  container m-auto'>
-              <p className='text-[#181818] px-5  text-[13px] font-[500]'>Expert Solutions for Your Success</p>
+          <div className='mt-[100px]  '>
+              <p className='text-[#181818]   text-[13px] font-[500]'>Expert Solutions for Your Success</p>
               <div className='flex justify-between'>
-                <h1 className='text-[#316541] px-5  text-[32px] font-[600]'>Upcoming Events</h1>
+                <h1 className='text-[#316541]   text-[32px] font-[600]'>Upcoming Events</h1>
                 <p className='hidden lg:flex  items-center font-[500] text-[#316541]'>
                   Explore All
                   <FaArrowRightLong className='ml-4 text-[#316541]' />
@@ -141,7 +141,7 @@ const Home = () => {
            </div>
 
 
-           <div className='container mx-auto bg-[#ADDF881A] lg:h-[317px] mt-[60px]  rounded-[10px] lg:w-[90%] mb-[100px] '>
+           <div className=' mx-auto bg-[#ADDF881A] lg:h-[317px] mt-[60px]  rounded-[10px] lg:w-[90%] mb-[100px] '>
             <div className='p-7'>
               <h1 className='text-[32px] font-[600] text-[#316541] mb-3'>Let's Personalize it</h1>
               <p className='text-[12px] font-[500] mb-5'>Tell us what you're into and we'll suggest more</p>
@@ -156,9 +156,9 @@ const Home = () => {
             </div>
            </div>
                   
-           <div className='grid lg:grid-cols-12 grid-cols-4 lg:space-x-20 space-x-4 mb-8 lg:px-[48px] mt-[115px]  '>
+           <div className='grid lg:grid-cols-12 grid-cols-4 lg:space-x-18 space-x-4 mb-8 lg:px-[48px] mt-[115px]  '>
                 <div className='lg:col-span-4 col-span-2 border-e border-[#316541] border-r-4 lg:px-10 '>
-                  <p className='lg:text-[28px] text-[24px] text-[#316541] font-[600] ml-6 '>Featured Enterprise Support Organizations (ESOs)</p>
+                  <p className='lg:text-[26px] text-[22px] text-[#316541] font-[600] ml-6 '>Featured Enterprise Support Organizations (ESOs)</p>
                 </div>
                 <div className='lg:col-span-8 col-span-2 px-3'>
                    <p className='lg:text-[14px] text-[11px] lg:w-[662px] text-[#181818] '>Meet our curated group of trusted partners dedicated to empowering businesses like yours. These exceptional organizations offer a wide range of expertise, from strategic consulting to technical implementation, to help you achieve your goals. With their extensive experience and proven track record,  </p>
@@ -166,8 +166,8 @@ const Home = () => {
                 </div>
 
 
-               <div className='container m-auto'>
-               <div className='grid grid-cols-2 lg:grid-cols-5 lg:gap-[36px] px-4 gap-3 lg:px-[70px]'>
+               <div className=' m-auto lg:px-7'>
+               <div className='grid grid-cols-2 lg:grid-cols-5  px-4 gap-4 '>
                   {Esos && Esos.map((e,index) =>(
                     <EsoCard key={index} eso={e} />
                   ))}
@@ -188,8 +188,8 @@ const Home = () => {
                 </div>
               </div>
              
-            <div className='container mx-auto lg:px-[100px] py-[90px] px-8'>
-              <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 lg:gap-20 md:gap-15 gap-36'>
+            <div className=' mx-auto py-[90px]   lg:px-8'>
+              <div className='grid grid-cols-1 md:grid-cols-2   lg:grid-cols-3 lg:gap-5 md:gap-15 gap-36'>
                 {articles && articles.map((a,i) =>(
                   <ArticleCard key={i}/>
                 ))}
@@ -203,7 +203,7 @@ const Home = () => {
             </Link>
            </div>
                 
-                <div className='  container m-auto  bg-[#ADDF881A] lg:h-[651] lg:w-[1200px] mt-20 py-4 lg:mx-11   lg:p-8   p-4 rounded-[20px] w-full md:p-2 '>
+                <div className='  m-auto  bg-[#ADDF881A] lg:h-[651] lg:w-[1200px] mt-20 py-4 lg:px-11   lg:p-8   p-4 rounded-[20px] w-full md:p-2 '>
                   <div className='p-3'>
                     <h1 className='text-[32px] text-[#316541] font-[600]'>Our Creative Archive</h1>
                     <p className='text-[12px] ml-2 md:ml-0'>A collection of Creative Excellence</p>

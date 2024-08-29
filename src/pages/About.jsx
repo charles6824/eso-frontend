@@ -28,7 +28,7 @@ const About = () => {
                 <p className='text-[17px] mb-[11px] '> Expert Solutions for Your Success</p>
                 <p className='text-[#316541]  text-[40px] font-[600]'>Our Team</p>
            </div>
-             <div className='container mx-auto md:px-16  lg:px-10'>
+             <div className=' mx-auto md:px-16  lg:px-10'>
            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-[24px] '>
             {teamDatas && teamDatas.map((data,index) =>(
                 
