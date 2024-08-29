@@ -10,6 +10,7 @@ import {
 import LandingLayout from "./layouts/LandingLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Community from "./pages/Community";
 
 
 const router = createBrowserRouter(
@@ -18,6 +19,8 @@ const router = createBrowserRouter(
       <Route path="/" element={<LandingLayout />}>
         <Route index element={<Home />} />
         <Route path="/about" element = {<About/>} />
+        <Route path="/community" element = {<Community/>} />
+        
       </Route> 
     </>
   )

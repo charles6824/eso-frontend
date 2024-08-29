@@ -6,6 +6,8 @@ export const events =[
         date:'Started on: July 8, 2024',
         type:'FREE'
     },
+
+  
     {
         image:image,
         description:"Enterprise Africa Network Inaugural Cohort Fellowship  Programme",
