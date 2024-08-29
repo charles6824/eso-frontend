@@ -79,8 +79,8 @@ const Home = () => {
       </div>
 
 
-      <div className='m-auto px-5'>
-        <div className=' w-full  lg:w-[1240px] lg:p-[100px] pt-7 md:px-4   '>
+      <div className='m-auto px-8'>
+        <div className=' w-full  lg:p-[100px] pt-7 md:px-5  '>
           <p className='text-[13px] px-5 lg:px-0'>Expert Solutions for Your Success</p>
           <h2 className='text-[32px] font-[600] text-[#316541] mb-[50px] px-5 lg:px-0'>What We Provide</h2>
           <div className='flex lg:flex-row flex-col justify-center gap-5 lg:gap-[65px] px-5 md:px-0'>
