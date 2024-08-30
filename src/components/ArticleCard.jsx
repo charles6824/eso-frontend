@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const ArticleCard = () => {
   return (
-    <div className=' h-[383px] rounded-[10px] bg-[#ADDF8840] shadow-md relative lg:px-8'>
+    <div className=' h-[383px] rounded-[10px] bg-[#ADDF8840]  relative lg:px-8'>
         
 
         <img src={image} alt="" className="absolute top-[-100px] left-[30px] w-[80%]" />

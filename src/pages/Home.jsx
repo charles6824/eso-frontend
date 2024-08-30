@@ -21,11 +21,11 @@ import sponsors from "../assests/images/sponsors.png"
 const Home = () => {
   return (
     <>
-      <div className="header">
-        <div className=" mx-auto flex flex-col lg:flex-row  justify-between py-8 md:py-5 ">
+      <div className="header ">
+        <div className="  flex flex-col lg:flex-row  justify-between py-8 md:py-5  ">
           <div className="text-header w-[356px] md:pt-[120px] md:w-[100%] m-auto text-center lg:w-[45%] md:pl-10 lg:pl-12 text-textWhite  md:text-start">
-            <img src={arrow} alt=" " className="mb-4"  />
-            <h1 className="uppercase lg:text-[36px] text-[28px] font-bold text-white  lg:w-[100%] mb-3 md:leading-8">
+            <img src={arrow} alt=" " className="mb-4 px-7 md:px-0 "  />
+            <h1 className="uppercase lg:text-[36px] text-[25px] font-bold text-white  lg:w-[100%] mb-3 md:leading-8">
               WELCOME TO the
               <br />
               <span className="text-primaryColor ">
@@ -33,7 +33,7 @@ const Home = () => {
               </span>{" "}
               Sharing <br /> Platform
             </h1>
-            <p className="leading-5 md:w-[450px] lg:w-[100%]">
+            <p className="leading-5 md:w-[450px] lg:w-[80%] text-[12px] md:text-[16px] px-7 md:px-0">
               We are a collective of business professionals that bring values to
               your company with global scales experiences. Lorem ipsum dolor sit
               amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -51,27 +51,27 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="img-header  lg:w-[50%]  w-[100%] mx-8 mx:px-0">
+          <div className="img-header p-6 md:p-0  lg:w-[50%]  w-[100%] mx-8 mx:px-0">
             <img src={hero} alt="" srcset="" style={{ width: "100%" }} />
           </div>
         </div>
          
          <div className='w-full  lg:h-[145px] bg-[#ADDF88] rounded-md '>
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-7 py-4 lg:py-0  px-20 '>
-            <div className='  border-[#FFFFFF] lg:mt-8  border-r '>
-              <p className='text-[24px] font-[600] mb-[12px]'>10,000+</p>
-              <p className='lg:text-[14px] text-[10px] font-[500] leading-[16px]'>Enterprise Support Organizations</p>
+          <div className=' grid grid-cols-2 md:grid-cols-4 lg:gap-9 gap-4 py-4 lg:py-0 space-x-8 lg:px-20 '>
+            <div className=' border-[#FFFFFF] lg:mt-8  border-r ml-8 md:ml-0'>
+              <p className='lg:text-[24px] text-[20px] font-[600] mb-[12px]'>10,000+</p>
+              <p className='lg:text-[14px] text-[10px] font-[500] leading-[16px]'>Enterprise Organizations</p>
             </div>
             <div className=' border-[#FFFFFF] lg:mt-8 md:border-r'>
-              <p className='text-[24px] font-[600] mb-[12px]'>2,000+</p>
+              <p className='lg:text-[24px] text-[20px] font-[600] mb-[12px]'>2,000+</p>
               <p className='lg:text-[14px] text-[10px] font-[500] leading-[16px]'>Business Organizations</p>
             </div>
             <div className=' border-[#FFFFFF] lg:mt-8 border-r'>
-              <p className='text-[24px] font-[600] mb-[12px]'>1,000,000+</p>
+              <p className='lg:text-[24px] text-[20px] font-[600] mb-[12px]'>100,0000+</p>
               <p className='lg:text-[14px] text-[10px] font-[500] leading-[16px]'>Events and Programmes</p>
             </div>
             <div className=' lg:mt-8'>
-              <p className='text-[24px] font-[600] mb-[12px] '>100+</p>
+              <p className='lg:text-[24px] text-[20px] font-[600] mb-[12px] '>1000+</p>
               <p className='lg:text-[14px] text-[10px] font-[500] leading-[16px]'>Countries</p>
             </div>
           </div>
@@ -79,7 +79,7 @@ const Home = () => {
       </div>
 
 
-      <div className='m-auto px-8'>
+      <div className='m-auto lg:px-8'>
         <div className=' w-full  lg:p-[100px] pt-7 md:px-5  '>
           <p className='text-[13px] px-5 lg:px-0'>Expert Solutions for Your Success</p>
           <h2 className='text-[32px] font-[600] text-[#316541] mb-[50px] px-5 lg:px-0'>What We Provide</h2>
@@ -102,9 +102,9 @@ const Home = () => {
           </div>
 
           <div className='mt-[100px]  '>
-              <p className='text-[#181818] text-[13px] font-[500] '>Expert Solutions for Your Success</p>
-              <div className='flex justify-between'>
-                <h1 className='text-[#316541] text-[32px] font-[600] '>Upcoming Programmes</h1>
+              <p className='text-[#181818] text-[13px] font-[500] px-3 md:px-0 '>Expert Solutions for Your Success</p>
+              <div className='flex justify-between px-3 md:px-0'>
+                <h1 className='text-[#316541] lg:text-[32px] text-[24px] font-[600] '>Upcoming Programmes</h1>
                 <p className='hidden lg:flex items-center font-[500] text-[#316541]'>
                   Explore All
                   <FaArrowRightLong className=' ml-4 text-[#316541]' />
@@ -121,9 +121,9 @@ const Home = () => {
                 FIND MORE PROGRAMMES
                 </Link>
            </div>
-          <div className='mt-[100px]  '>
-              <p className='text-[#181818]   text-[13px] font-[500]'>Expert Solutions for Your Success</p>
-              <div className='flex justify-between'>
+          <div className='mt-[100px] '>
+              <p className='text-[#181818]  text-[13px] font-[500] px-2 md:px-0'>Expert Solutions for Your Success</p>
+              <div className='flex justify-between px-2 md:px-0'>
                 <h1 className='text-[#316541]   text-[32px] font-[600]'>Upcoming Events</h1>
                 <p className='hidden lg:flex  items-center font-[500] text-[#316541]'>
                   Explore All
@@ -135,7 +135,7 @@ const Home = () => {
          </div>
 
         <div className='flex justify-center lg:mt-[60px]'>
-                <Link to='#' className='py-[12px] px-[32px]  border border-[#316541] rounded-[5px] text-[20px]  font-[600]'>
+                <Link to='#' className='md:py-[12px] py-[8px] px-[16px] md:px-[32px]  border border-[#316541] rounded-[5px] text-[20px]  font-[600]'>
                 FIND MORE EVENTS
             </Link>
            </div>
@@ -161,7 +161,7 @@ const Home = () => {
                   <p className='lg:text-[26px] text-[22px] text-[#316541] font-[600] ml-6 '>Featured Enterprise Support Organizations (ESOs)</p>
                 </div>
                 <div className='lg:col-span-8 col-span-2 px-3'>
-                   <p className='lg:text-[14px] text-[11px] lg:w-[662px] text-[#181818] '>Meet our curated group of trusted partners dedicated to empowering businesses like yours. These exceptional organizations offer a wide range of expertise, from strategic consulting to technical implementation, to help you achieve your goals. With their extensive experience and proven track record,  </p>
+                   <p className='lg:text-[14px] text-[11px] lg:w-[662px]  text-[#181818] '>Meet our curated group of trusted partners dedicated to empowering businesses like yours. These exceptional organizations offer a wide range of expertise, from strategic consulting to technical implementation, to help you achieve your goals. With their extensive experience and proven track record,  </p>
                 </div>
                 </div>
 
@@ -183,12 +183,12 @@ const Home = () => {
                 <div className='lg:col-span-4 col-span-2 border-e border-[#316541] border-r-4 lg:px-10 '>
                   <p className='text-[30px] text-[#316541] font-[600] ml-6 '>Featured Articles</p>
                 </div>
-                <div className='lg:col-span-8 col-span-2 px-3 lg:px-0 '>
-                   <p className='lg:text-[14px] text-[12px] lg:w-[662px] text-[#181818] '>Our featured articles showcase the expertise and perspectives of our team, providing timely and informative content to help you stay ahead of the curve. Explore our curated collection of stories, analysis, and commentary to gain a deeper understanding of the topics that matter most.</p>
+                <div className='lg:col-span-8 col-span-2  lg:px-0 w-[157px] '>
+                   <p className='lg:text-[14px] text-[12px]   lg:w-[662px] text-[#181818]  '>Our featured articles showcase the expertise and perspectives of our team, providing timely and informative content to help you stay ahead of the curve. Explore our curated collection of stories, analysis, and commentary to gain a deeper understanding of the topics that matter most.</p>
                 </div>
               </div>
              
-            <div className=' mx-auto py-[90px]  lg:px-20'>
+            <div className=' mx-auto py-[90px] px-5  lg:px-20'>
               <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 lg:gap-6 md:gap-15 gap-36'>
                 {articles && articles.map((a,i) =>(
                   <ArticleCard key={i}/>

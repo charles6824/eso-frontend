@@ -5,12 +5,12 @@ import stars from "../assests/images/5tar.png"
 
 const EventsCard = () => {
   return (
-    <div className='lg:w-[360px] lg:h-[470px] shadow-md font-[inter] rounded-md  '>
+    <div className='w-full  shadow-md  rounded-md px-4 md:px-0 '>
         <img src={banner} alt="banner" className="md:w-[370px] w-full object-cover rounded-t-md" />
         <div className="bg-[#ADDF881A] p-4 ">
             <div className="flex items-center  justify-between relative">
                 <p className="text-[16px] font-[500] w-[198px]">Enterprise Africa Network Inaugural Cohort Fellowship  Programme</p>
-                <button className="text-[#3CC13B] rounded-[4px] border-[#3CC13B] py-1 px-2 border absolute top-[-4px] left-[250px] text-[13px] font-[500]">on-going</button>
+                <button className="text-[#3CC13B] rounded-[4px] border-[#3CC13B] py-1 px-2 border absolute top-[-4px] left-[250px] lg:left-[230px] text-[13px] font-[500]">on-going</button>
                 <img src={stars} alt="stars" className="mt-10 w-[34%] ml-3" />
             </div>
             <div className="mb-2 mt-2">
