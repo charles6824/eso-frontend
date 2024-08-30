@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
       <div className="header ">
-        <div className="  flex flex-col lg:flex-row  justify-between py-8 md:py-5  ">
+        <div className="  flex flex-col-reverse lg:flex-row  justify-between py-4 md:py-5  ">
           <div className="text-header w-[356px] md:pt-[120px] md:w-[100%] m-auto text-center lg:w-[45%] md:pl-10 lg:pl-12 text-textWhite  md:text-start">
             <img src={arrow} alt=" " className="mb-4 px-7 md:px-0 "  />
             <h1 className="uppercase lg:text-[36px] text-[25px] font-bold text-white  lg:w-[100%] mb-3 md:leading-8">
@@ -102,9 +102,9 @@ const Home = () => {
           </div>
 
           <div className='mt-[100px]  '>
-              <p className='text-[#181818] text-[13px] font-[500] px-3 md:px-0 '>Expert Solutions for Your Success</p>
+              <p className='text-[#181818] text-[13px] font-[500] px-5 md:px-0 '>Expert Solutions for Your Success</p>
               <div className='flex justify-between px-3 md:px-0'>
-                <h1 className='text-[#316541] lg:text-[32px] text-[24px] font-[600] '>Upcoming Programmes</h1>
+                <h1 className='text-[#316541] lg:text-[32px] text-[24px] font-[600] px-2 md:px-0 py-3 md:py-0 '>Upcoming Programmes</h1>
                 <p className='hidden lg:flex items-center font-[500] text-[#316541]'>
                   Explore All
                   <FaArrowRightLong className=' ml-4 text-[#316541]' />
@@ -122,9 +122,9 @@ const Home = () => {
                 </Link>
            </div>
           <div className='mt-[100px] '>
-              <p className='text-[#181818]  text-[13px] font-[500] px-2 md:px-0'>Expert Solutions for Your Success</p>
+              <p className='text-[#181818]  text-[13px] font-[500] px-4 md:px-0'>Expert Solutions for Your Success</p>
               <div className='flex justify-between px-2 md:px-0'>
-                <h1 className='text-[#316541]   text-[32px] font-[600]'>Upcoming Events</h1>
+                <h1 className='text-[#316541]   text-[32px] font-[600] px-2 md:px-0 py-2 md:py-0'>Upcoming Events</h1>
                 <p className='hidden lg:flex  items-center font-[500] text-[#316541]'>
                   Explore All
                   <FaArrowRightLong className='ml-4 text-[#316541]' />
